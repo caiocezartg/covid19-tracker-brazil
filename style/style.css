@@ -116,7 +116,7 @@ body {
   background-color: #3bb8c9;
 }
 
-@media (min-width: 780px) and (max-width: 960px) {
+@media (min-width: 768px) and (max-width: 960px) {
   body {
     height: 100%;
   }
@@ -130,8 +130,16 @@ body {
   }
 }
 
-@media (max-width: 779px) {
+@media (max-width: 767px) {
+  body {
+    height: 100%;
+  }
+
   .casos-colunas {
     grid-template-columns: 1fr;
+  }
+
+  .covid-board {
+    margin: 30px 0;
   }
 }
