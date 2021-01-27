@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #23e343;
+}
+
+.container {
+  max-width: 90%;
+}
+
+.covid-board {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+.covid-board h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.casos-colunas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.casos {
+  padding: 15px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.casos i {
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+}
+
+.casos h2 {
+  margin-bottom: 55px;
+}
+
+.casos span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.casos:nth-child(1) {
+  background-color: #00b9fa;
+}
+
+.casos:nth-child(1):hover {
+  transition: 0.3s;
+  transform: scale(1.1, 1.1);
+  background-color: #009dd6;
+}
+
+.casos:nth-child(2) {
+  background-color: #00fabe;
+}
+
+.casos:nth-child(2):hover {
+  transition: 0.3s;
+  transform: scale(1.1, 1.1);
+  background-color: #02daa7;
+}
+
+.casos:nth-child(3) {
+  background-color: #fa9900;
+}
+
+.casos:nth-child(3):hover {
+  transition: 0.3s;
+  transform: scale(1.1, 1.1);
+  background-color: #d18101;
+}
+
+.casos:nth-child(4) {
+  background-color: #fa3400;
+}
+
+.casos:nth-child(4):hover {
+  transition: 0.3s;
+  transform: scale(1.1, 1.1);
+  background-color: #b12300;
+}
+
+.casos:nth-child(5) {
+  background-color: #fb4bc9;
+}
+
+.casos:nth-child(5):hover {
+  transition: 0.3s;
+  transform: scale(1.1, 1.1);
+  background-color: #d13da7;
+}
+
+.casos:nth-child(6) {
+  background-color: #4be6fb;
+}
+
+.casos:nth-child(6):hover {
+  transition: 0.3s;
+  transform: scale(1.1, 1.1);
+  background-color: #3bb8c9;
+}
+
+@media (min-width: 500px) and (max-width: 960px) {
+  .casos-colunas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 499px) {
+  body {
+    height: 100%;
+  }
+
+  .covid-board {
+    margin: 30px 0;
+  }
+
+  .casos-colunas {
+    grid-template-columns: 1fr;
+  }
+}
